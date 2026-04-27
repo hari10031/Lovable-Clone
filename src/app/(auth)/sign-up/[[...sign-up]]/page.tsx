@@ -6,16 +6,31 @@ import { Button } from "@/components/ui/button";
 
 import { SignUpForm } from "./sign-up-form";
 
-// Gate signups behind a hard account cap. We hit the Clerk Backend API on
-// every render of /sign-up so the cap is enforced even when the deployment
-// scales horizontally — no extra database needed.
+// Cache the Clerk user count for a short window so we don't burn through
+// Clerk's free-tier rate limit (which surfaces as "Rate exceeded." plain-text
+// 429 responses that downstream JSON parsers choke on). 30 seconds is short
+// enough that the cap stays effectively real-time, long enough that even
+// frantic page refreshes don't smash the API.
+const COUNT_CACHE_TTL_MS = 30_000;
+let cachedCount: { value: number; expiresAt: number } | null = null;
+
+async function getCachedUserCount(): Promise<number> {
+  if (cachedCount && cachedCount.expiresAt > Date.now()) {
+    return cachedCount.value;
+  }
+  const client = await clerkClient();
+  const value = await client.users.getCount();
+  cachedCount = { value, expiresAt: Date.now() + COUNT_CACHE_TTL_MS };
+  return value;
+}
+
+// Gate signups behind a hard account cap.
 export default async function SignUpPage() {
   let userCount = 0;
   let countLookupFailed = false;
 
   try {
-    const client = await clerkClient();
-    userCount = await client.users.getCount();
+    userCount = await getCachedUserCount();
   } catch (error) {
     // If Clerk is unreachable we fail OPEN (allow signup) rather than locking
     // everyone out — but we log the issue so you can spot it.

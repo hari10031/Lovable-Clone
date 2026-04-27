@@ -1,0 +1,19 @@
+{"time":"2026-04-23T13:35:36.2800965Z","level":"INFO","msg":"initialized database","db":"sqlite","mode":"memory"}
+{"time":"2026-04-23T13:35:36.2880714Z","level":"INFO","msg":"ran database migrations","db":"sqlite","mode":"memory"}
+{"time":"2026-04-23T13:35:36.3199653Z","level":"INFO","msg":"starting executor grpc server","svc":"executor","addr":":50053"}
+{"time":"2026-04-23T13:35:36.331926Z","level":"INFO","msg":"service starting","caller":"devserver","service":"devserver"}
+{"time":"2026-04-23T13:35:36.331926Z","level":"INFO","msg":"autodiscovering locally hosted SDKs"}
+{"time":"2026-04-23T13:35:36.331926Z","level":"INFO","msg":"service starting","caller":"debug-api-dev","service":"debug-api-dev"}
+{"time":"2026-04-23T13:35:36.3339192Z","level":"INFO","msg":"starting debug api","addr":":7777"}
+{"time":"2026-04-23T13:35:36.331926Z","level":"INFO","msg":"service starting","caller":"executor","service":"executor"}
+{"time":"2026-04-23T13:35:36.331926Z","level":"INFO","msg":"service starting","caller":"lease-scavenger","service":"lease-scavenger"}
+{"time":"2026-04-23T13:35:36.331926Z","level":"INFO","msg":"service starting","caller":"api","service":"api"}
+{"time":"2026-04-23T13:35:36.331926Z","level":"INFO","msg":"starting event stream","backend":"redis"}
+{"time":"2026-04-23T13:35:36.3329226Z","level":"INFO","msg":"service starting","caller":"connect-gateway","service":"connect-gateway"}
+{"time":"2026-04-23T13:35:36.3339192Z","level":"INFO","msg":"subscribing to function queue"}
+{"time":"2026-04-23T13:35:36.334916Z","level":"INFO","msg":"starting server","caller":"api","addr":"0.0.0.0:8288"}
+{"time":"2026-04-23T13:35:36.3359124Z","level":"INFO","msg":"service starting","caller":"runner","service":"runner"}
+{"time":"2026-04-23T13:35:36.3369098Z","level":"INFO","msg":"starting connect gateway grpc server","caller":"connect-gateway","addr":":50052"}
+{"time":"2026-04-23T13:35:36.3380517Z","level":"INFO","msg":"Executor started in assignedQueueShard Mode","queue_shard":"default"}
+{"time":"2026-04-23T13:35:36.3339192Z","level":"INFO","msg":"apps synced, disabling auto-discovery"}
+{"time":"2026-04-23T13:35:36.4343093Z","level":"INFO","msg":"subscribing to events","topic":"events"}

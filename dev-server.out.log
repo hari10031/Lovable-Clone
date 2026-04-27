@@ -1,0 +1,60 @@
+
+> lovable-clone@0.1.0 dev
+> next dev --turbopack -p 3008
+
+   ▲ Next.js 15.3.4 (Turbopack)
+   - Local:        http://localhost:3008
+   - Network:      http://192.168.1.245:3008
+   - Environments: .env
+
+ ✓ Starting...
+Creating turbopack project { dir: 'M:\\3-1\\Lovable-Clone', testMode: true }
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 1137ms
+ ✓ Ready in 3.6s
+ ○ Compiling /api/inngest ...
+ ✓ Compiled /api/inngest in 5.9s
+ PUT /api/inngest 200 in 6848ms
+ GET /api/inngest 200 in 185ms
+ PUT /api/inngest 200 in 260ms
+ PUT /api/inngest 200 in 99ms
+ PUT /api/inngest 200 in 136ms
+ PUT /api/inngest 200 in 151ms
+ PUT /api/inngest 200 in 161ms
+ PUT /api/inngest 200 in 85ms
+ PUT /api/inngest 200 in 94ms
+ PUT /api/inngest 200 in 449ms
+ PUT /api/inngest 200 in 65ms
+ PUT /api/inngest 200 in 85ms
+ PUT /api/inngest 200 in 122ms
+ PUT /api/inngest 200 in 63ms
+ PUT /api/inngest 200 in 61ms
+ PUT /api/inngest 200 in 87ms
+ PUT /api/inngest 200 in 68ms
+ PUT /api/inngest 200 in 57ms
+ PUT /api/inngest 200 in 57ms
+ PUT /api/inngest 200 in 95ms
+ PUT /api/inngest 200 in 54ms
+ PUT /api/inngest 200 in 58ms
+ PUT /api/inngest 200 in 88ms
+ PUT /api/inngest 200 in 49ms
+ PUT /api/inngest 200 in 54ms
+ PUT /api/inngest 200 in 50ms
+ PUT /api/inngest 200 in 109ms
+ PUT /api/inngest 200 in 60ms
+ PUT /api/inngest 200 in 54ms
+ PUT /api/inngest 200 in 62ms
+ PUT /api/inngest 200 in 57ms
+ PUT /api/inngest 200 in 49ms
+ PUT /api/inngest 200 in 49ms
+ PUT /api/inngest 200 in 81ms
+ PUT /api/inngest 200 in 54ms
+ PUT /api/inngest 200 in 65ms
+ PUT /api/inngest 200 in 49ms
+ PUT /api/inngest 200 in 50ms
+ PUT /api/inngest 200 in 61ms
+ PUT /api/inngest 200 in 98ms
+ PUT /api/inngest 200 in 82ms
+ PUT /api/inngest 200 in 53ms
+ PUT /api/inngest 200 in 43ms
+[?25h
